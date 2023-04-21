@@ -1,41 +1,62 @@
 <!DOCTYPE html>
-<html lang = "sv">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Main CSS Assignment</title>
+  <title>My Awesome Website</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header class="page-header"> <!--Header for my logo and the other pages-->
-  <h1 id="headerLogo">Header Logo</h1>
-  <nav  class="main-navigation page-header__item" >
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation"> <!--Links to the other pages on my portfolio-->
-        <a href="#" role="menuitem">Header Link One</a>
-      </li>
-      <li role="presentation">
-        <a href="#" role="menuitem">Header Link Two</a>
-      </li>
-      <li role="presentation" >
-        <a href="#" role="menuitem">Header Link Three</a>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <div class="header-top">
+      <div class="logo">Header Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Header Link One</a></li>
+          <li><a href="#">Header Link Two</a></li>
+          <li><a href="#">Header Link Three</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-main">
+      <h1>This website is awesome</h1>
+      <p class="subtext">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+      <button>Sign Up</button>
+    </div>
+    <div class="placeholder-image"></div>
   </header>
-  <div class="main">
-    <h1 class="awesomeWeb">
-      This website is awesome!
-    </h1>
-    <p class="h1Subtext">
-      This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.
-    </p>
-    <img src="https://placehold.co/500x300" alt="Placeholder Image" class="placeholderImage">
-    <button>Sign Up</button>
-  </div>
-  <footer class="page-footer"> <!--My footer on where you can contact me-->
-
+  <main>
+    <h2>Some random information</h2>
+    <div class="squares">
+      <div></div>
+      <p class="subtext">This is some subtext under an illustration or image</p>
+      <div></div>
+      <p class="subtext">This is some subtext under an illustration or image</p>
+      <div></div>
+      <p class="subtext">This is some subtext under an illustration or image</p>
+      <div></div>
+      <p class="subtext">This is some subtext under an illustration or image</p>
+    </div>
+  </main>
+  
+  <section class="quote">
+    <blockquote>
+      <p>Inspirational Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, nam tempore. Quisquam, quod. Quisquam, quod.</p>
+      <p id="q-author">-Lorem</p>
+    </blockquote>
+  </section>
+  
+  <section>
+    <div class="cta-frame">
+      <div class="cta">
+        <h2>Call to action! It's time</h2>
+        <h3>Sign up for our product by clicking that button right over there!</h3>
+        <button class="cta-button">Sign Up</button>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>Copyright &copy; 2023 All rights reserved.</p>
   </footer>
 </body>
 </html>
