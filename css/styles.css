@@ -1,6 +1,19 @@
 @font-face {
   font-family: 'Roboto', sans-serif;
+  src: url(..\fonts\roboto\Roboto-Black.ttf);
+  src: url(..\fonts\Roboto-BlackItalic.ttf);
+  src: url(..\fonts\Roboto-Bold);
+  src: url(..\fonts\Roboto-BoldItalic.ttf);
+  src: url(..\fonts\Roboto-Italic.ttf);
+  src: url(..\fonts\Roboto-Light.ttf);
+  src: url(..\fonts\Roboto-LightItalic.ttf);
+  src: url(..\fonts\Roboto-Medium.ttf);
+  src: url(..\fonts\Roboto-MediumItalic.ttf);
   src: url(..\fonts\Roboto-Regular.ttf);
+  src: url(..\fonts\Roboto-Thin.ttf);
+  src: url(..\fonts\Roboto-ThinItalic.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -18,18 +31,27 @@ header {
   padding: 1rem;
 }
 
-.header-main{
+.hero-main{
+  background-color: #1F2937;
+  color: #F9FAF8;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex: 1;
+}
+
+.hero-text {
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 10px;
 }
 
-.header-top {
-  display: block;
-  flex: 0 0 auto;
-}
-  
 .logo {
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
 }
   
@@ -45,32 +67,36 @@ nav li {
 nav a {
   text-decoration: none;
   color: #E5E7EB;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
   
 h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 48px;
   font-weight: 800;
-  margin-top: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
   
 .subtext {
-  text-align: center;
-  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin: 10px 0;
   color: #E5E7EB;
   font-size: 18px;
 }
-
 
 button {
   background-color: #3882F6;
   color: #F9FAF8;
   border: none;
   padding: 0.5rem 1rem;
-  margin-top: 1rem;
   font-size: 18px;
   cursor: pointer;
   border-radius: 10px;
+  display: block;
+  margin-top: 1rem;
 }
   
 .placeholder-image {
@@ -78,6 +104,7 @@ button {
   height: 200px;
   background-color: lightgray;
   border-radius: 10px;
+  display: 2;
 }
   
 /* Main */
@@ -89,6 +116,7 @@ main {
 }
   
 h2 {
+  font-family: 'Roboto', sans-serif;
   font-size: 36px;
   font-weight: 800;
   color: #1F2937;
@@ -97,13 +125,12 @@ h2 {
   
 .squares {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 10px;
   margin-bottom: 1rem;
 }
-  
+
 .squares div {
   width: 100px;
   height: 100px;
@@ -112,15 +139,24 @@ h2 {
   border-radius: 10px;
   margin: 10px;
 }
+
+.squares p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  width: 100px;
+}
   
 /* Quote */
 .quote {
   background-color: #E5E7EB;
   padding: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 #q-author {
   text-align: right;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-style: bold;
 }
@@ -135,23 +171,32 @@ blockquote {
 .cta {
   background-color: #3882F6;
   color: #F9FAF8;
-  padding: 2rem;
+  padding: 10px;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-  /* Call to Action */
 .cta-frame {
   background-color: #FFFFFF;
-  padding: 5rem;
+  padding: 1rem;
 }
-  
+
+.cta-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
 .cta h2 {
+  font-family: 'Roboto', sans-serif;
   font-size: 36px;
   font-weight: 800;
   margin-bottom: 1rem;
 }
-  
+
 .cta h3 {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-top: 0;
@@ -161,6 +206,7 @@ blockquote {
 .cta button {
   border: solid 3px #F9FAF8;
   border-radius: 10px;
+  margin-right: 20px;
 }
   
 /* Footer */
@@ -170,52 +216,3 @@ footer {
   padding: 1rem;
   text-align: center;
 }
-
-/*Media Queries and Keyframes Below*/
-/*
-@media all and (max-width: 500px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
-
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-}
-
-@media all and (max-width: 750px) {
-    .grid {
-        grid-gap: 10px;
-    }
-
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-}*/
